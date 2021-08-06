@@ -1,0 +1,140 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Very Dark Gray: hsl(0, 0%, 17%)
+- Dark Gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (text input): 18px
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500, 700 */
+
+:root {
+   --very-dark-gray: hsl(0, 0%, 17%);
+   --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Rubik', sans-serif;
+}
+
+body {
+   height: 100vh;
+   max-width: 1440px;
+}
+
+section {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.ip {
+   background-image: url('../images/pattern-bg.png');
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex: 1;
+}
+
+.ip h1 {
+   color: #fff;
+   font-weight: 500;
+   letter-spacing: 1px;
+   margin: 30px 0 15px 0;
+}
+
+.ip__input {
+   margin: 10px 10px 0 10px;
+}
+
+.ip__input input {
+   font-size: 18px;
+   padding: 12px;
+   width: 380px;
+   border: none;
+   outline: none;
+   letter-spacing: 1px;
+   border-radius: 10px 0 0 10px;
+}
+
+.ip__input button {
+   padding: 12px;
+   font-size: 18px;
+   margin-left: -5px;
+   border-radius: 0 10px 10px 0;
+   outline: none;
+   border: none;
+   width: 45px;
+   background-color: var(--very-dark-gray);
+   color: #fff;
+   cursor: pointer;
+}
+
+.ip__info {
+   width: 70%;
+   background-color: #fff;
+   padding: 40px 20px;
+   border-radius: 10px;
+   transform: translateY(60px);
+   z-index: 2;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.ip__info ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style-type: none;
+}
+
+.ip__info ul li {
+   flex: 1;
+   border-right: 1px solid var(--dark-gray);
+   padding: 0 15px;
+}
+
+.ip__info ul li:last-child {
+   border-right: none;
+}
+
+.ip__info ul h6 {
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   letter-spacing: 0.8px;
+   color: var(--dark-gray);
+}
+
+.ip__info ul h3 {
+   color: var(--very-dark-gray);
+   line-height: 25px;
+}
+
+#mapid {
+   height: 370px;
+   z-index: 1;
+   flex: 2;
+}
