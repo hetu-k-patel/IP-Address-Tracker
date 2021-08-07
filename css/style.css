@@ -43,7 +43,7 @@ body {
    max-width: 1440px;
 }
 
-section {
+main {
    height: 100%;
    display: flex;
    flex-direction: column;
@@ -129,11 +129,14 @@ section {
    border-right: none;
 }
 
-.ip__info ul h6 {
+.ip__info ul span {
    margin-bottom: 10px;
+   display: inline-block;
+   font-size: 12px;
    text-transform: uppercase;
    letter-spacing: 0.8px;
    color: var(--dark-gray);
+   font-weight: 500;
 }
 
 .ip__info ul h3 {
@@ -152,6 +155,11 @@ section {
       width: 80%;
    }
 
+   .ip__info {
+      width: 60%;
+      padding: 15px 20px;
+   }
+
    .ip__info ul {
       flex-direction: column;
    }
@@ -160,10 +168,5 @@ section {
       border: none;
       text-align: center;
       margin-bottom: 24px;
-   }
-
-   .ip__info {
-      width: 60%;
-      padding: 15px 20px;
    }
 }
