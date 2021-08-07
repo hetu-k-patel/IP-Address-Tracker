@@ -131,7 +131,7 @@ main {
 
 .ip__info ul span {
    margin-bottom: 10px;
-   display: inline-block;
+   display: block;
    font-size: 12px;
    text-transform: uppercase;
    letter-spacing: 0.8px;
@@ -139,9 +139,10 @@ main {
    font-weight: 500;
 }
 
-.ip__info ul h3 {
+.ip__info ul strong {
    color: var(--very-dark-gray);
    line-height: 25px;
+   font-size: 1.17em;
 }
 
 #mapid {
