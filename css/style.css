@@ -57,6 +57,8 @@ main {
    flex-direction: column;
    margin-top: -20px;
    height: 40%;
+   background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .ip h1 {
